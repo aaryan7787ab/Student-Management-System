@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navigation">
+      <h1>Student Management System</h1>
+      <input type="text" placeholder="Search..." id="search" />
+      <button id="help-button">Help</button>
+      <button id="user"><i class="fa-solid fa-user"></i></button>
+    </div>
+    <div class="supersystem">
+      <h2>Student Management system</h2>
+      <div class="system">
+        <div class="student">
+          <label for="text"
+            >Name:
+            <input type="text" id="text" required />
+          </label>
+        </div>
+        <div class="studentID">
+          <label for="number"
+            >Student ID:
+            <input type="number" id="number" required />
+          </label>
+        </div>
+        <div class="marks">
+          <label for="numbers"
+            >Marks:
+            <input type="number" id="marks" required />
+          </label>
+        </div>
+        <div class="submit">
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="sheetarea">
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Student ID</th>
+            <th>Marks</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- JavaScript will add rows here -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
